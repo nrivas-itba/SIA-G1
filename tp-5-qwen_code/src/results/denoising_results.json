@@ -1,0 +1,32 @@
+{
+  "5": {
+    "noise_rate": 0.05,
+    "reconstruction_loss": 0.2660929390624027,
+    "mean_per_pixel_error": 0.4946925810549883
+  },
+  "10": {
+    "noise_rate": 0.1,
+    "reconstruction_loss": 0.26763988993623905,
+    "mean_per_pixel_error": 0.4949337759505215
+  },
+  "15": {
+    "noise_rate": 0.15,
+    "reconstruction_loss": 0.2678655917857362,
+    "mean_per_pixel_error": 0.4945692142739611
+  },
+  "20": {
+    "noise_rate": 0.2,
+    "reconstruction_loss": 0.2675799243986172,
+    "mean_per_pixel_error": 0.49314282429098033
+  },
+  "25": {
+    "noise_rate": 0.25,
+    "reconstruction_loss": 0.26887333483120984,
+    "mean_per_pixel_error": 0.49459255033415894
+  },
+  "0": {
+    "noise_rate": 0.0,
+    "reconstruction_loss": 0.2655366871054748,
+    "mean_per_pixel_error": 0.49564213197209234
+  }
+}

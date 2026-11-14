@@ -1,0 +1,19 @@
+---
+name: tp5_autoencoder
+type: project
+category: practice_standard
+description: Autoencoder architecture for TP5 using TP3 digits dataset
+keywords:
+  - "autoencoder"
+  - "latent space"
+  - "binary images"
+usage_scenarios:
+  - "Encode 5x7 binary digits to 2D latent space"
+  - "Reconstruct original images from latent representation"
+---
+
+# Autoencoder configuration for TP5
+
+Input: 35 pixels (5x7 binary images)
+Latent space: 2 dimensions
+Architecture: 35 → hidden → 2 → hidden → 35

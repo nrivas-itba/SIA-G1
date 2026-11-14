@@ -1,0 +1,23 @@
+---
+name: tp5_hyperparam_config
+type: project
+category: practice_standard
+description: Hyperparameter sweep configuration for autoencoder optimization
+keywords:
+  - "hyperparameter optimization"
+  - "sweep"
+  - "optuna"
+  - "autoencoder"
+usage_scenarios:
+  - "Find optimal architecture for autoencoder"
+  - "Compare learning rates and batch sizes"
+---
+
+# Hyperparameter sweep configuration
+
+N_trials: 30
+Search space:
+  learning_rate: loguniform(1e-4, 1e-1)
+  batch_size: categorical([32, 64, 128, 256])
+  encoder_layers: [64, 128, 256]
+  activation: categorical(["sigmoid", "tanh"])

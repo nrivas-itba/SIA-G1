@@ -1,0 +1,41 @@
+{
+  "autoencoder": {
+    "val_loss": 0.301964,
+    "test_loss": 0.303381,
+    "pixel_error": 0.5225,
+    "epochs": 1000,
+    "architecture": "35 -> [128, 64] -> 2 -> [64, 128] -> 35"
+  },
+  "residual_autoencoder": {
+    "val_loss": 0.051489,
+    "test_loss": 0.051489,
+    "pixel_error": 0.0238,
+    "epochs": 1000,
+    "architecture": "35 -> [128, 64] -> 2 -> [64, 128] -> 35 + skip connection",
+    "improvement": "95.5% reduction in pixel error vs standard AE"
+  },
+  "denoising_autoencoder": {
+    "train_loss_final": 0.282546,
+    "noise_levels": {
+      "5%": 0.279967,
+      "10%": 0.281172,
+      "15%": 0.28348,
+      "20%": 0.284062,
+      "25%": 0.285666
+    }
+  },
+  "vae": {
+    "reconstruction_loss": 0.081205,
+    "epochs": 1500
+  },
+  "dataset": {
+    "samples": 12449,
+    "input_dim": 35,
+    "latent_dim": 2,
+    "source": "TP3 digits (28x28) -> binary 5x7"
+  },
+  "performance": {
+    "per_epoch_500_samples": 0.057,
+    "total_training_time_hours": "~20 hours"
+  }
+}
